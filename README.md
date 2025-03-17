@@ -1,19 +1,11 @@
-# ESP32 HTTP Server Example
+Purpose : Through the use of fast api, get request from a website are processed to display 
+what client has entered on the server on the lcd 
 
-ESP32 web server example: control 2 LEDs from a web page hosted on the ESP32.
+Summary of each function in you code :
 
-Use [Wokwi for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=wokwi.wokwi-vscode) to simulate this project.
+- For void setup: it prints hello esp32 for both lcd and serial monitor and then if wifi is connected it display the IP address
+- For void loop: if the wifi is connected it will reference the server available to the client. Api key is added and then the get request occurs where it takes the two words entered by the client from server and displays it on lcd and serial monitor. If none of this happens the wifi connection is lost. 
 
-## Building
 
-This is a [PlatformIO](https://platformio.org) project. To build it, [install PlatformIO](https://docs.platformio.org/en/latest/core/installation/index.html), and then run the following command:
 
-```
-pio run
-```
-
-## Simulating
-
-To simulate this project, install [Wokwi for VS Code](https://marketplace.visualstudio.com/items?itemName=wokwi.wokwi-vscode). Open the project directory in Visual Studio Code, press **F1** and select "Wokwi: Start Simulator".
-
-Once the simulation is running, open http://localhost:8180 in your web browser to interact with the simulated HTTP server.
+Riddle: The more you take, the more you leave behind. "What am I?"
